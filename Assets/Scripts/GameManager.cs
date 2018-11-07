@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,9 +21,19 @@ public class GameManager : MonoBehaviour
     public Material r;
     public Material d;
 
+    public UnityEngine.UI.Text cText; 
+
+    //This bool will determine whether I want the actual time or a specified test time
+    public bool testTime;
+
+    public int testHour;
+    public int testMin;
+
     public bool hourGateMet;
     public bool minuteGateMet;
     public bool secondGateMet;
+
+    public float timer;
 
     //int to track what puzzle the player should currently be working on
     private int puzzleID;
@@ -37,6 +48,8 @@ public class GameManager : MonoBehaviour
     [XmlArray("Puzzles")]
     [XmlArrayItem("Puzle")]
     List<Puzzle> puzzleList;
+    private float timeToWait;
+    private int timerStatus;
 
     // Use this for initialization
     void Start()
@@ -74,16 +87,32 @@ public class GameManager : MonoBehaviour
         float secondsDegree = -(currentTime.Second / 60f) * 360f;
         secondHand.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(new Vector3(0, 0, secondsDegree)));
 
-        float minutesDegree = -(currentTime.Minute / 60f) * 360f;
-        minuteHand.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(new Vector3(0, 0, minutesDegree)));
+        if (testTime) {
+            float minutesDegree = -(testMin / 60f) * 360f;
+            minuteHand.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(new Vector3(0, 0, minutesDegree)));
 
-        float hoursDegree = -(currentTime.Hour / 12f) * 360f;
-        hourHand.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(new Vector3(0, 0, hoursDegree)));
+            float hoursDegree = -( testHour / 12f) * 360f;
+            hourHand.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(new Vector3(0, 0, hoursDegree)));
+
+
+        }
+        else
+        {
+            float minutesDegree = -(currentTime.Minute / 60f) * 360f;
+            minuteHand.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(new Vector3(0, 0, minutesDegree)));
+
+            float hoursDegree = -(currentTime.Hour / 12f) * 360f;
+            hourHand.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(new Vector3(0, 0, hoursDegree)));
+        }
+
 
         secondHand.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0, clockSpeed);
         minuteHand.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0, clockSpeed / 60);
         hourHand.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0, clockSpeed / (60 * 60 * 12));
 
+        timer = 0f;
+
+  
     }
 
     private void resetBools()
@@ -105,6 +134,24 @@ public class GameManager : MonoBehaviour
         {
             nextPuzzle();
         }
+
+        timer += Time.deltaTime;
+        if(timer > timeToWait)
+        {
+            updateTimer();
+        }
+
+    }
+
+    private void updateTimer()
+    {
+        timerStatus += 1;
+        cText.text = getLine(timerStatus);
+    }
+
+    private string getLine(int timerStatus)
+    {
+        return ("Why are you still here");
     }
 
     //MISC 
