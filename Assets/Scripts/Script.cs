@@ -76,11 +76,11 @@ public class WordScript : MonoBehaviour {
         /*Puzzle 40*/ Lines.Add("So where’s the fun here? As much as I know I’m fantastic at game design, even I can tell that it’s not all that satisfying to wait till your tiny amount of control can solve a simple but tedious puzzle.");
         /*Puzzle 41*/ Lines.Add("So you’re not competing against the game anymore. You’re competing against me. ");
         /*Puzzle 42*/ Lines.Add("This is a battle of wills, not a battle of wits. You’ve got a competitive streak against me, that, if somehow you can outlast and outsmart me at my own game, you’ll feel some sense of accomplishment. ");
-        /*Puzzle 43*/ Lines.Add("Good luck.");
+        /*Puzzle 43*/ Lines.Add("A little odd, but good luck anyways.");
         //SECTION 6
-        /*Puzzle 44*/ Lines.Add("You did another puzzle. Wow. Cool.I’m proud of you.");
+        /*Puzzle 44*/ Lines.Add("You did another puzzle. Wow. Cool. I’m proud of you.");
         /*Puzzle 45*/
-        Lines.Add("You know, at some point, I’m just going to abandon you here. You’re going to keep doing puzzles, keep coming back,  keep insisting that there’s something interesting deep in this game, and there won’t be.");
+        Lines.Add("You know, at some point, I’m just going to abandon you here. You’re going to keep doing puzzles, keep coming back,  keep insisting that there’s something interesting deep down further in this game, and there won’t be.");
         /*Puzzle 46*/
         Lines.Add("There will be no more dialogue to find, no more secrets.  And you’ll give up, because you should, because at some point, there will be absolutely no reason for you to continue. ");
         /*Puzzle 47*/ Lines.Add("In fact, I’m lazy enough and busy enough with other things in my life that I might just abandon you right here. ");
@@ -91,14 +91,19 @@ public class WordScript : MonoBehaviour {
         //Section 9
         /*Puzzle 50*/ Lines.Add("Ok so you’re curious. I’ll give you that.");
         /*Puzzle 51*/
-        Lines.Add("And I’ll tell you why. You WANT to get to the point where I’ve abandoned this game. You want to prove that you’ve beaten me. That your will is stronger than mine.");
+        Lines.Add("And I’ll tell you why. You WANT to get to the point where I’ve abandoned this game. You want to prove that you’ve beaten me. That you've lasted longer than I have");
         /*Puzzle 52*/
-        Lines.Add("Even when you’re at the most severe disadvantage, you still want to beat me somehow. You want to outsmart me. You want to prove to me that you’ve beaten my puzzle, my game, my test, while playing by my rules.");
+        Lines.Add("Even when you’re at the most severe disadvantage, you still want to beat my game somehow. You want to outsmart me. You want to prove to me that you’ve beaten my puzzle, my game, my test, while playing by my rules.");
         /*Puzzle 53*/
-        Lines.Add("It’s an interesting metanarrative we’ve developed here, isn’t it? This is no longer about you controlling a game, or competing against a game, it’s about you competing against me. ");
-        /*Puzzle 56*/ Lines.Add("Spoilers: I win.");
+        Lines.Add("It’s an interesting kind of metanarrative. This is no longer about you controlling a game, or competing against a game, it’s about you competing against me. ");
+        /*Puzzle 56*/ Lines.Add("It's also funny how well this represents an inverse of the larger point about reality");
+        /*Puzzle 56*/
+        Lines.Add("A lot of ");
+        /*Puzzle 56*/
+        Lines.Add("It's also funny how well this ties into the larger point about reality");
         //Section 10
-        /*Puzzle 55*/ Lines.Add("So since I’ve got you here, I figured I’d bore you with a section of my thesis. The section is about the shift between you, the player, vs game, and you vs the designer.");
+        /*Puzzle 55*/
+        Lines.Add("So since I’ve got you here, I figured I’d bore you with a section of my thesis. The section is about the shift between you, the player, vs game, and you vs the designer.");
         /*Puzzle 56*/
         Lines.Add("To paraphrase, games like this are often based around you doing what I “don’t want you to do”. I provide “intended” ways of playing the game, and then I also provide “unintended” ways of playing the game.");
         /*Puzzle 57*/
