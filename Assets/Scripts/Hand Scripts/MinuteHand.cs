@@ -5,11 +5,11 @@ using UnityEngine;
 public class MinuteHand : MonoBehaviour {
 
     public GameManager gm;
-
+    public bool debug;
     // Use this for initialization
     void Start()
     {
-        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
     }
 
     // Update is called once per frame
@@ -24,8 +24,9 @@ public class MinuteHand : MonoBehaviour {
         {
             if (other.transform.gameObject.GetComponent<BlockScript>().Status == 2)
             {
-                Debug.Log("Minute hand should be set as true");
-                gm.secondGateMet = true;
+                if (debug)
+                    Debug.Log("Minute hand should be set as true");
+                gm.minuteGateMet = true;
             }
         }
     }
@@ -36,8 +37,9 @@ public class MinuteHand : MonoBehaviour {
         {
             if (other.transform.gameObject.GetComponent<BlockScript>().Status == 2)
             {
-                Debug.Log("Minute hand should be set as true");
-                gm.secondGateMet = true;
+                if (debug)
+                    Debug.Log("Minute hand should be set as true");
+                gm.minuteGateMet = true;
             }
         }
     }
@@ -48,8 +50,9 @@ public class MinuteHand : MonoBehaviour {
         {
             if (other.transform.gameObject.GetComponent<BlockScript>().Status == 2)
             {
-                Debug.Log("Minute hand should be set as false");
-                gm.secondGateMet = false;
+                if (debug)
+                    Debug.Log("Minute hand should be set as false");
+                gm.minuteGateMet = false;
             }
         }
     }

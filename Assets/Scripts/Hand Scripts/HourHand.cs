@@ -2,19 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HourHand : MonoBehaviour {
+public class HourHand : MonoBehaviour
+{
 
     public GameManager gm;
+    public bool debug;
+    public LayerMask lm;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
+       
+        Collider[] hitColliders = Physics.OverlapBox(gameObject.transform.position, transform.localScale / 2, Quaternion.identity, lm);
+        int i = 0;
+        //Check when there is a new collider coming into contact with the box
+        while (i < hitColliders.Length)
+        {
+            //Output all of the collider names
+            Debug.Log("Hit : " + hitColliders[i].name + i);
+            //Increase the number of Colliders in the array
+            i++;
+        }
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,8 +39,9 @@ public class HourHand : MonoBehaviour {
         {
             if (other.transform.gameObject.GetComponent<BlockScript>().Status == 3)
             {
-                Debug.Log("Hour hand should be set as true");
-                gm.secondGateMet = true;
+                if (debug)
+                    Debug.Log("Hour hand should be set as true");
+                gm.hourGateMet = true;
             }
         }
     }
@@ -34,8 +52,9 @@ public class HourHand : MonoBehaviour {
         {
             if (other.transform.gameObject.GetComponent<BlockScript>().Status == 3)
             {
-                Debug.Log("Hour hand should be set as true");
-                gm.secondGateMet = true;
+                if (debug)
+                    Debug.Log("Hour hand should be set as true");
+                gm.hourGateMet = true;
             }
         }
     }
@@ -46,8 +65,9 @@ public class HourHand : MonoBehaviour {
         {
             if (other.transform.gameObject.GetComponent<BlockScript>().Status == 3)
             {
-                Debug.Log("Hour hand should be set as false");
-                gm.secondGateMet = false;
+                if (debug)
+                    Debug.Log("Hour hand should be set as false");
+                gm.hourGateMet = false;
             }
         }
     }

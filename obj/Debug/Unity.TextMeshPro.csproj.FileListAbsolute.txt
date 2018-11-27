@@ -19,7 +19,6 @@ D:\Game Engines\Clock_Game\Temp\bin\Debug\UnityEditor.HoloLens.dll
 D:\Game Engines\Clock_Game\Temp\bin\Debug\UnityEditor.iOS.Extensions.dll
 D:\Game Engines\Clock_Game\Temp\bin\Debug\UnityEditor.LinuxStandalone.Extensions.dll
 D:\Game Engines\Clock_Game\Temp\bin\Debug\UnityEditor.Networking.dll
-D:\Game Engines\Clock_Game\Temp\bin\Debug\UnityEditor.OSXStandalone.Extensions.dll
 D:\Game Engines\Clock_Game\Temp\bin\Debug\UnityEditor.Purchasing.dll
 D:\Game Engines\Clock_Game\Temp\bin\Debug\UnityEditor.SpatialTracking.dll
 D:\Game Engines\Clock_Game\Temp\bin\Debug\UnityEditor.Timeline.dll
@@ -193,3 +192,9 @@ D:\Game Engines\Clock_Game\obj\Debug\Unity.TextMeshPro.csproj.CoreCompileInputs.
 D:\Game Engines\Clock_Game\obj\Debug\Unity.TextMeshPro.csproj.CopyComplete
 D:\Game Engines\Clock_Game\obj\Debug\Unity.TextMeshPro.dll
 D:\Game Engines\Clock_Game\obj\Debug\Unity.TextMeshPro.pdb
+D:\Game Engines\Clock_Game\Temp\bin\Debug\Vuforia.UnityExtensions.dll
+D:\Game Engines\Clock_Game\Temp\bin\Debug\Vuforia.UnityExtensions.Editor.dll
+D:\Game Engines\Clock_Game\Temp\bin\Debug\Vuforia.UnityExtensions.Editor.xml
+D:\Game Engines\Clock_Game\Temp\bin\Debug\Vuforia.UnityExtensions.xml
+D:\Game Engines\Clock_Game\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.dll
+D:\Game Engines\Clock_Game\Temp\bin\Debug\UnityEngine.SpatialTrackingModule.xml

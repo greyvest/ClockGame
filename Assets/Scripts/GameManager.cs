@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public Material r;
     public Material d;
 
+    private WordScript script;
+
     public UnityEngine.UI.Text cText; 
 
     //This bool will determine whether I want the actual time or a specified test time
@@ -50,13 +52,17 @@ public class GameManager : MonoBehaviour
     List<Puzzle> puzzleList;
     private float timeToWait;
     private int timerStatus;
+    public TextAsset puzzledatafile;
 
     // Use this for initialization
     void Start()
     {
+        script = new WordScript();
+        script.setLines();
+        timerStatus = 0;
         resetBools();
 
-        Debug.Log(Application.persistentDataPath);
+        //Debug.Log(Application.persistentDataPath);
         //get player object
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         //instatiate puzzle list
@@ -65,14 +71,11 @@ public class GameManager : MonoBehaviour
         puzzleList = loadPuzzles();
         //load the previous progress in so we know which puzzle to spawn on startup.
         puzzleID = loadID();
+        timerStatus = loadID();
         //set current puzzle
         setPuzzle(puzzleID);
 
         secondHand = GameObject.FindGameObjectWithTag("Second Hand");
-        if (secondHand != null)
-        {
-            Debug.Log("THIS WAS SET");
-        }
         minuteHand = GameObject.FindGameObjectWithTag("Minute Hand");
         hourHand = GameObject.FindGameObjectWithTag("Hour Hand");
 
@@ -81,8 +84,6 @@ public class GameManager : MonoBehaviour
         hourHand.GetComponent<Rigidbody>().centerOfMass = new Vector3(0, -.75f, 0);
 
         DateTime currentTime = DateTime.Now;
-
-
 
         float secondsDegree = -(currentTime.Second / 60f) * 360f;
         secondHand.GetComponent<Rigidbody>().MoveRotation(Quaternion.Euler(new Vector3(0, 0, secondsDegree)));
@@ -111,7 +112,8 @@ public class GameManager : MonoBehaviour
         hourHand.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0, clockSpeed / (60 * 60 * 12));
 
         timer = 0f;
-
+        cText.text = script.Lines[timerStatus];
+        Debug.Log(script.Lines[timerStatus]);
   
     }
 
@@ -130,28 +132,20 @@ public class GameManager : MonoBehaviour
         minuteHand.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0, clockSpeed / 60);
         hourHand.GetComponent<Rigidbody>().angularVelocity = new Vector3(0, 0, clockSpeed / (60 * 60 * 12));
 
-        if (Input.GetKey(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             nextPuzzle();
         }
 
-        timer += Time.deltaTime;
-        if(timer > timeToWait)
-        {
-            updateTimer();
-        }
-
     }
 
-    private void updateTimer()
+    private IEnumerator updateTimer()
     {
         timerStatus += 1;
-        cText.text = getLine(timerStatus);
-    }
-
-    private string getLine(int timerStatus)
-    {
-        return ("Why are you still here");
+        cText.GetComponent<FadeScript>().FadeOut();
+        yield return new WaitForSeconds(2);
+        cText.text = script.Lines[timerStatus];
+        cText.GetComponent<FadeScript>().FadeIn();
     }
 
     //MISC 
@@ -215,7 +209,7 @@ public class GameManager : MonoBehaviour
     }
 
     //Use this to reset the ball after a failed attempt
-    internal void resetLevel()
+    public void resetLevel()
     {
         player.setGrav(false);
         player.GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -272,7 +266,7 @@ public class GameManager : MonoBehaviour
     {
         resetBools();
         resetMaterials();
-        Debug.Log("Setting puzzle " + puzzleID);
+        //Debug.Log("Setting puzzle " + puzzleID);
         player.gameObject.SetActive(false);
         player.GetComponent<Rigidbody>().velocity = Vector3.zero;
         var g = puzzleList[puzzleID];
@@ -398,6 +392,8 @@ public class GameManager : MonoBehaviour
         setPuzzle(puzzleID);
         //save progress after incrementing puzzle id so that the next puzzle will be the one the player starts on if they restart the game.
         saveProgress();
+
+        StartCoroutine(updateTimer());
     }
 
     public static void savePuzzles(List<Puzzle> list)
@@ -408,13 +404,15 @@ public class GameManager : MonoBehaviour
         fileStream.Close();
     }
 
-    public static List<Puzzle> loadPuzzles()
+    public List<Puzzle> loadPuzzles()
     {
         XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Puzzle>));
-        FileStream fileStream = new FileStream(UnityEngine.Application.persistentDataPath + "Puzzles.xml", FileMode.Open);
-        List<Puzzle> retint = (List<Puzzle>)xmlSerializer.Deserialize(fileStream);
-        fileStream.Close();
-        return retint;
+
+        using (var reader = new System.IO.StringReader(puzzledatafile.text))
+        {
+            return xmlSerializer.Deserialize(reader) as List<Puzzle>;
+        }
+        
     }
 
     //save the player's progress by incrementing the puzzle id;
@@ -424,6 +422,15 @@ public class GameManager : MonoBehaviour
         FileStream fileStream = new FileStream(Application.persistentDataPath + "savedata.xml", FileMode.Create);
        
         xmlSerializer.Serialize(fileStream, puzzleID);
+        fileStream.Close();
+    }
+
+    public void resetProgress()
+    {
+        XmlSerializer xmlSerializer = new XmlSerializer(typeof(int));
+        FileStream fileStream = new FileStream(Application.persistentDataPath + "savedata.xml", FileMode.Create);
+
+        xmlSerializer.Serialize(fileStream, 0);
         fileStream.Close();
     }
 

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPuzzle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--Your comment-->
+  <Puzzle  pX="1" pY="4" pZ="0" db="true" dx ="1" dy ="0" dz ="0" sb="false" sc ="0" mb="false" mc ="2" hb="false" hc ="1" />
+  <Puzzle  pX="1" pY="4" pZ="0" db="true" dx ="0" dy ="-1" dz ="0" sb="false" sc ="0" mb="false" mc ="2" hb="false" hc ="1" />
+  <Puzzle  pX="-1" pY="4" pZ="0" db="true" dx ="-0.5" dy ="0" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="false" hc ="1" />
+  <Puzzle  pX="1" pY="4" pZ="0" db="true" dx =".35" dy ="0" dz ="0" sb="true" sc ="1" mb="false" mc ="2" hb="false" hc ="1" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="false" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <!--Section 2-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-.5" pY="4" pZ="0" db="true" dx ="2" dy ="-2" dz ="0" sb="true" sc ="1" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="1" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <!--Section 3-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <!--Section 4-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="3" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="3" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="3" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="3" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="3" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="3" />
+  <!--Section 5-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <!--Section 6-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <!--Section 7-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="3" />
+  <!--Section 8-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="1" />
+  <!--Section 9-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="3" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="3" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="3" />
+  <!--Section 10-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="0" />
+  <!--Section 11-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+  <!--Section 12-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="1" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="1" />
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="1" />
+  <!--Section 13-->
+  <Puzzle  pX="-2" pY="3" pZ="0" db="true" dx ="2" dy ="-1.2" dz ="0" sb="true" sc ="0" mb="false" mc ="2" hb="true" hc ="2" />
+
+  
+</ArrayOfPuzzle>

@@ -6,11 +6,11 @@ public class SecondHand : MonoBehaviour
 {
 
     public GameManager gm;
-
+    public bool debug;
     // Use this for initialization
     void Start()
     {
-        gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class SecondHand : MonoBehaviour
         {
             if (other.transform.gameObject.GetComponent<BlockScript>().Status == 1)
             {
-                Debug.Log("Second hand should be set as true");
+                if (debug) { Debug.Log("Second hand should be set as true"); }
                 gm.secondGateMet = true;
             }
         }
@@ -37,7 +37,8 @@ public class SecondHand : MonoBehaviour
         {
             if (other.transform.gameObject.GetComponent<BlockScript>().Status == 1)
             {
-                Debug.Log("Second hand should be set as true");
+                if (debug)
+                { Debug.Log("Second hand should be set as true"); }
                 gm.secondGateMet = true;
             }
         }
@@ -49,7 +50,8 @@ public class SecondHand : MonoBehaviour
         {
             if (other.transform.gameObject.GetComponent<BlockScript>().Status == 1)
             {
-                Debug.Log("Second hand should be set as false");
+                if (debug)
+                { Debug.Log("Second hand should be set as false"); }
                 gm.secondGateMet = false;
             }
         }
