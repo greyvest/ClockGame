@@ -382,10 +382,7 @@ public class GameManager : MonoBehaviour
     internal void nextPuzzle()
     {
         //Set all old gates to inactive
-        foreach (GameObject x in GameObject.FindGameObjectsWithTag("Gate"))
-        {
-            x.SetActive(false);
-        }
+        despawnGates();
         //increment to next puzzle
         incPID();
         //set next puzzle
@@ -396,13 +393,13 @@ public class GameManager : MonoBehaviour
         StartCoroutine(updateTimer());
     }
 
-    public static void savePuzzles(List<Puzzle> list)
-    {
-        XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Puzzle>));
-        FileStream fileStream = new FileStream(UnityEngine.Application.persistentDataPath + "Puzzles.xml", FileMode.Create);
-        xmlSerializer.Serialize(fileStream, list);
-        fileStream.Close();
-    }
+    //public static void savePuzzles(List<Puzzle> list)
+    //{
+    //    XmlSerializer xmlSerializer = new XmlSerializer(typeof(List<Puzzle>));
+    //    FileStream fileStream = new FileStream(UnityEngine.Application.persistentDataPath + "Puzzles.xml", FileMode.Create);
+    //    xmlSerializer.Serialize(fileStream, list);
+    //    fileStream.Close();
+    //}
 
     public List<Puzzle> loadPuzzles()
     {
@@ -432,6 +429,16 @@ public class GameManager : MonoBehaviour
 
         xmlSerializer.Serialize(fileStream, 0);
         fileStream.Close();
+        despawnGates();
+        Start();
+    }
+
+    private static void despawnGates()
+    {
+        foreach (GameObject x in GameObject.FindGameObjectsWithTag("Gate"))
+        {
+            x.SetActive(false);
+        }
     }
 
     //Level ID Functions//
