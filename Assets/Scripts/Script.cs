@@ -43,10 +43,10 @@ public class WordScript : MonoBehaviour {
         //SECTION 3
         /*Puzzle 15*/
         Lines.Add("Realism in video games is one of the biggest things people “want”, but it’s also something they really don’t want. ");
-        /*Puzzle 16*/ Lines.Add("Realistic graphics and color pallets were chased for years and years in the Xbox 360/Playstation 3 era, but just resulted in a whole lot of boring looking “brown shooters”.");
+        /*Puzzle 16*/ Lines.Add("\"Realistic\" graphics were the focus for years in the Xbox 360/Playstation 3 era, but just resulted in boring looking “brown shooters”.");
         /*Puzzle 17*/
-        Lines.Add(" Once games like Overwatch and Splatoon came around, arcadey, colorful games that throw realism to the wind in favor of fun, they become massive hits because they stood out.");
-        /*Puzzle 18*/ Lines.Add("Giek Siong states \"Gamers regularly ignore unrealistic aspects of games. For example, you can crash a car in a racing game and still continue the race, when in reality the impact would wreck the car and seriously injure the driver.\"");
+        Lines.Add(" Once games like Overwatch and Splatoon came aroundy, colorful games that throw realism to the wind in favor of fun, they blew up.");
+        /*Puzzle 18*/ Lines.Add("Giek Siong states \" you can crash a car in a racing game and still continue the race, when in reality the impact would wreck the car and seriously injure the driver.\"");
         /*“Understanding Realism in Computer Games through Phenomenology”, quote, “There is no doubt that realism is a very big thing in computer games today. Game developers tout it as their main selling point, and video game console manufacturers battle it out over whomever has the best graphics hardware to render the most number of polygons in the shortest time. Gamers and game magazines alike rave about it, or complain about the lack of it. However, “realism” is not an easily definable concept. Just what is considered “realistic” in a computer game can appear to be contradictory. */
         /*Puzzle 19*/
         Lines.Add("He's right. A racing game where you were permanently disabled and in the hospital for months after wrecking a car would be dreadfully boring.");

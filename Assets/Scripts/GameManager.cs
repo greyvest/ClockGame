@@ -236,7 +236,7 @@ public class GameManager : MonoBehaviour
 
             }
         }   
-        else if (g.mb)
+        if (g.mb)
         {
             if (!minuteGateMet)
             {
@@ -245,7 +245,7 @@ public class GameManager : MonoBehaviour
             }
                 
         }
-        else if (g.hb)
+        if (g.hb)
         {
             if (!hourGateMet)
             {
