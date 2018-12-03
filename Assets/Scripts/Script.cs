@@ -40,28 +40,28 @@ public class WordScript : MonoBehaviour {
         /*Puzzle 4*/ Lines.Add("You'll have to wait and come back to line up the clock hands with the colors they match to in order complete some of the puzzles.");
         /*Puzzle 5*/ Lines.Add("The clock will run even when you close the app. I know you're eager for the next puzzle, but be patient and come back when it's ready.");
         //Section 2
-        /*Puzzle 6*/ Lines.Add("A collection of minigames called “Penn and Teller’s Smoke and Mirror’s were developed the Sega CD in 1995, but was never distributed due to the downfall of the Sega CD. ");
-        /*Puzzle 7*/ Lines.Add("The collection was meant to include a game called “Desert Bus”. Desert bus is a game that tasks the player with driving a bus between Tucson, Arizona and Las Vegas, Nevada in real time. ");
+        /*Puzzle 6*/ Lines.Add("A collection of minigames called “Penn and Teller’s Smoke and Mirror’s\" were developed the Sega CD in 1995, but were never distributed due to the downfall of the Sega CD. ");
+        /*Puzzle 7*/ Lines.Add("The collection was meant to include the game “Desert Bus”. Desert Bus is a game that tasks players with driving a bus between Tucson, Arizona and Las Vegas, Nevada in real time.");
         /*Puzzle 8*/ Lines.Add("The road is boringly straight, empty of passengers, veers slightly to the right at all times so it must be constantly steered left by the player less it crash.");
         /*Puzzle 9*/ Lines.Add("The drive from Tuscon to Las Vegas is 8 hours, and so the player must pay constant attention to the game for that period of time. Desert Bus cannot be paused.");
-        /*Puzzle 10*/ Lines.Add("This game was made to prove a (snarky) point about realism in games. ");
-        /*Puzzle 11*/ Lines.Add("At the time, there was an wide cultural outcry against violence in video games, so the developers of desert bus developed a game to display how exciting realistic video games are.");
-        /*Puzzle 12*/ Lines.Add("There were no grand rewards, nor any exciting developments. Once the player reached Las Vegas, they score a point and turn the empty bus around to drive it back to Tucson.");
+        /*Puzzle 10*/ Lines.Add("This game was made to prove a (snarky) point about realism in games.");
+        /*Puzzle 11*/ Lines.Add("At the time, there was a cultural outcry against (unrealistic) violence in video games, so the developers of desert bus made game to display how exciting rigidly realistic video games are.");
+        /*Puzzle 12*/ Lines.Add("There are no grand rewards, nor any exciting developments. Once the player reaches Las Vegas, they score a point and turn the empty bus around to drive it back to Tucson.");
         /*Puzzle 13*/ Lines.Add("The only excitement in the game is the occasional rock or empty bus stop on the side of the road, and, at 5 hours into the drive, a bug will splatter on the windshield.");
-        /*Puzzle 14*/ Lines.Add("The game is widely considered the worst video games ever made. But it successfully conveys a point; Realism does not make a game fun.");
+        /*Puzzle 14*/ Lines.Add("The game is widely considered the worst video gamep ever made. But it successfully conveys a point you definitely understand by now; Realism does not make a game fun.");
         //SECTION 3
         /*Puzzle 15*/
         Lines.Add("Realism in video games is one of the biggest things people “want”, but it’s also something they really don’t want. ");
         /*Puzzle 16*/ Lines.Add("\"Realistic\" graphics were the focus for years in the Xbox 360/Playstation 3 era, but just resulted in boring looking “brown shooters”.");
         /*Puzzle 17*/
-        Lines.Add(" Once games like Overwatch and Splatoon came aroundy, colorful games that throw realism to the wind in favor of fun, they blew up.");
+        Lines.Add(" Once games like Overwatch and Splatoon came aroundy, colorful games that throw realism to the wind in favor of fun, they became immensely popular and beloved.");
         /*Puzzle 18*/ Lines.Add("Giek Siong states \" you can crash a car in a racing game and still continue the race, when in reality the impact would wreck the car and seriously injure the driver.\"");
         /*“Understanding Realism in Computer Games through Phenomenology”, quote, “There is no doubt that realism is a very big thing in computer games today. Game developers tout it as their main selling point, and video game console manufacturers battle it out over whomever has the best graphics hardware to render the most number of polygons in the shortest time. Gamers and game magazines alike rave about it, or complain about the lack of it. However, “realism” is not an easily definable concept. Just what is considered “realistic” in a computer game can appear to be contradictory. */
         /*Puzzle 19*/
         Lines.Add("He's right. A racing game where you were permanently disabled and in the hospital for months after wrecking a car would be dreadfully boring.");
-        /*Puzzle 20*/ Lines.Add("Realistic leaning shooters like Arma or Insurgency surely have their dedicated fanbases, but never reach the levels of success that games like Doom or Call of Duty do.");
+        /*Puzzle 20*/ Lines.Add("Realistic leaning shooters like Arma or Insurgency surely have their dedicated fanbases, but never reach mainstrem success that games like Doom or Call of Duty do.");
         /*Puzzle 21*/
-        Lines.Add("Rigidly realistic Games don't allow their players to pursue fantasy fufilment as easily as less realistic games do, and are often much less popluar, and, well, less fun.");
+        Lines.Add("Rigidly realistic Games don't allow their players to pursue fantasy fufilment as easily as less realistic games do. It's not that they can't be fun, it's that it's harder for them to be fun.");
         /*Puzzle 22*/ Lines.Add("So now that I’ve explained to you why this game isn’t fun, why are you still here?");
         /*Puzzle 23*/ Lines.Add("Why do you keep coming back?");
         /*Puzzle 24*/ Lines.Add("This game is honestly pretty boring. It’s insistence on realism is an absolute detriment to it’s entertainment value. And boy is it ugly.");
@@ -70,7 +70,7 @@ public class WordScript : MonoBehaviour {
         //SECTION 4
         /*Puzzle 27*/ Lines.Add("So you’re still here. ");
         /*Puzzle 28*/ Lines.Add("Congratulations");
-        /*Puzzle 29*/ Lines.Add("party horn");
+        /*Puzzle 29*/ Lines.Add("*party horn*");
         /*Puzzle 30*/ Lines.Add("You’ve reached the end!");
         /*Puzzle 31*/ Lines.Add("You’ve solved enough puzzles and endured this dreadfully realistic game long enough to win. ");
         /*Puzzle 32*/ Lines.Add("That’s it, game’s over. Thanks for playing");
@@ -125,7 +125,7 @@ public class WordScript : MonoBehaviour {
         Lines.Add("The battle then becomes for the player to find something that the snarky developer didn’t think of; find a way to do something that doesn’t trigger a sarcastic remark but still gets the job done in a subversive way.");
         /*Puzzle 62*/
         Lines.Add("That’s what you want, that’s what the developer knows you want, and those are the kinds of juicy opportunities they bait you with before making a snide remark at your expense. ");
-        /*Puzzle 63*/ Lines.Add("So just remember you're doing exactly what I want you to.");
+        /*Puzzle 63*/ Lines.Add("So just remember, you're doing exactly what I want you to.");
         //Section 11
         /*Puzzle 64*/ Lines.Add("So at this point I’m wondering how I best end this game");
         /*Puzzle 65*/ Lines.Add("Am I gonna just leave you hanging? I definitely could. Just auto generate puzzles for the rest of time and give you hope that there’s something at the end of the rainbow.");
@@ -135,7 +135,7 @@ public class WordScript : MonoBehaviour {
         /*Puzzle 69*/ Lines.Add("I'll have to think about this more.");
         //Section 12
         /*Puzzle 70*/ Lines.Add("So just in case you think you’re clever, yes, I imagined that people would manipulate their device system times to fast forward. ");
-        /*Puzzle 71*/ Lines.Add("If you didn’t do that you probably just did the face palm thing for not thinking about that. ");
+        /*Puzzle 71*/ Lines.Add("If you didn’t do that you probably just face palmed for not thinking to do that. ");
         /*Puzzle 72*/ Lines.Add("If you did do that, you should feel VERY called out. You’re not experiencing the artful mundanity of this game as it was intended and are a bad person. ");
         //Section 13
         /*Puzzle 73*/ Lines.Add("If you’re watching clips of this on youtube so that you don’t actually have to play this game, then you’re also a bad person. I worked hard on this. How could you.");
@@ -146,7 +146,9 @@ public class WordScript : MonoBehaviour {
         /*Puzzle 71*/ Lines.Add("I developed all these puzzles with a cheat button to skip through puzzles.");
         /*Puzzle 72*/ Lines.Add("So honest congratulations to you for getting through it. I don't know if you're sane but you're sure dedicated.");
         /*Puzzle 73*/ Lines.Add("Thanks for playing.");
-        /*Puzzle 74*/ Lines.Add("Alright if you acutally beat that puzzle then screenshot this and tweet it to @grey_vest that was supposed to be impossible.");
+        Lines.Add("");
+        /*Puzzle 74*/
+        Lines.Add("Alright if you acutally beat that puzzle then screenshot this and tweet it to @grey_vest that was supposed to be impossible.");
         Lines.Add("");
         Lines.Add("");
         Lines.Add("");

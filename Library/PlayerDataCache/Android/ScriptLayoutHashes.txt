@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-/Users/austinanderson/Documents/ClockGame_V_01.apk
+D:/ClockGame/gold.apk
 SceneListBegin?
 Assets/Scenes/TestScene.unity
 SceneListEnd?
